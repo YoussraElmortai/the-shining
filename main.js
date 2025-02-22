@@ -59,7 +59,7 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 
   gsap.to(".hero_images > img",{
-    clipPath: "polygon(100% 0%, 0% 0%, 0% 100%, 100% 100%",
+    clipPath: "polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%)",
     duration: 1.5,
     ease:"power4.inOut",
     stagger: 0.5,
