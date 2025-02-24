@@ -51,11 +51,6 @@ document.addEventListener("DOMContentLoaded", () => {
     duration: 2,
     ease: "power3.out",
     delay: 8.5,
-    onComplete:() =>{
-      gsap.set(".pre_loader", {
-        display: "none",
-      });
-    },
   });
 
   gsap.to(".hero_images > img",{
@@ -70,7 +65,12 @@ document.addEventListener("DOMContentLoaded", () => {
     scale: 1.25,
     duration: 3,
     ease:"power3.inOut",
-    delay: 9,
+    delay: 10,
+    onComplete:() =>{
+      gsap.set(".content", {
+        display: "flex",
+      });
+    },
   })
 
 });
